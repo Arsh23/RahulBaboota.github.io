@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.code {
+  width: 100%;
+  background: #f46c69;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.svg {
+  position: absolute;
+  bottom: -10px;
+  width: 700px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
