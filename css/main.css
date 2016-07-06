@@ -1,12 +1,15 @@
-* {
+* 
+{
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   margin: 0;
 }
 
-.code {
+.code 
+{
   width: 100%;
   background: #f46c69;
   overflow: hidden;
@@ -14,7 +17,8 @@ body {
   height: 100vh;
 }
 
-.svg {
+.svg 
+{
   position: absolute;
   bottom: -10px;
   width: 700px;
@@ -23,7 +27,8 @@ body {
   margin: auto;
 }
 
-#macbook {
+#macbook 
+{
   //display: block;
   animation: macbook .7s linear;
   transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
