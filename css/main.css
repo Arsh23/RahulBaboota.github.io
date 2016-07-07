@@ -64,6 +64,7 @@ body
     transform: translateY(0px);
   }
 }
+
 @keyframes coder 
 {
   0% {
@@ -95,5 +96,20 @@ body
     opacity: 1;
   }
 }
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+}
+
 
 
