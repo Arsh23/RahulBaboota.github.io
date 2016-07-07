@@ -51,6 +51,19 @@ body
   animation: smoke 3s infinite;
 }
 
+
+@keyframes macbook 
+{
+  0% {
+    transform: translateY(300px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @keyframes coder 
 {
   0% {
