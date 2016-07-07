@@ -34,6 +34,12 @@ body
   transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+#coder 
+{
+  animation: coder .8s linear;
+  transform-origin: center center;
+}
+
 #coffee 
 {
   animation: coffee 1s linear;
@@ -44,6 +50,7 @@ body
 {
   animation: smoke 3s infinite;
 }
+
 
 @keyframes coffee 
 {
@@ -60,3 +67,5 @@ body
     opacity: 1;
   }
 }
+
+
