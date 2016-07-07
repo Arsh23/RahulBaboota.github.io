@@ -40,6 +40,11 @@ body
   transform-origin: 83% 80%;
 }
 
+#smoke 
+{
+  animation: smoke 3s infinite;
+}
+
 @keyframes coffee 
 {
   0% {
