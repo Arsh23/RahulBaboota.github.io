@@ -11,7 +11,7 @@ body
 .code 
 {
   width: 100%;
-  background: #f46c69;
+  /*background: #f46c69;*/
   overflow: hidden;
   position: relative;
   height: 100vh;
@@ -48,6 +48,18 @@ body
 #smoke 
 {
   animation: smoke 3s infinite;
+}
+
+#intro-box
+{
+  height: 250px;
+  width: 350px;
+  color: #FFFFFF;
+  margin-left: 25vh;
+  margin-top: 30vh;
+  font-family: 'Palanquin';
+  font-weight: 200;
+  font-size: 3vh;
 }
 
 
