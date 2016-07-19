@@ -6,6 +6,7 @@ var line2 = function()
 	{
 		strings: ["var define_rahul = function()"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line3();
@@ -19,6 +20,7 @@ var line3 = function()
 	{
 		strings: ["{"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line4();
@@ -32,6 +34,7 @@ var line4 = function()
 	{
 		strings: ["var definition = "],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line5();
@@ -43,21 +46,24 @@ var line5 = function()
 {
 	$('.white1').typed(
 	{
-		strings: ["Hello There . People call me Rahul Baboota . I am a"],
+		strings: ["'Hello There . People call me Rahul Baboota . I am a"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line6();
 		}
 	});
+	console.log('hello');
 }
 
 var line6 = function()
 {
 	$('.white2').typed(
 	{
-		strings: ["'Designer | Developer | Researcher | Aspiring Data Scientist | Star Gazer'"],
+		strings: ["Designer | Developer | Researcher | Aspiring Data Scientist | Star Gazer'"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line7();
@@ -69,8 +75,9 @@ var line7 = function()
 {
 	$('.yellow').typed(
 	{
-		strings: ["console.log()"],
+		strings: ["console.log"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line8();
@@ -82,8 +89,9 @@ var line8 = function()
 {
 	$('.blue').typed(
 	{
-		strings: ["definition"],
+		strings: ["(definition);"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line9();
@@ -97,6 +105,7 @@ var line9 = function()
 	{
 		strings: ["}"],
 		typeSpeed: 25,
+		showCursor: false,
 		onStringTyped: function()
 		{
 			line10();
@@ -106,18 +115,21 @@ var line9 = function()
 
 var line10 = function()
 {
-	$('.blue2').typed(
+	$('.gray2').typed(
 	{
-		strings: ["define_rahul();"],
+		strings: ["/* Have fun exploring Me!! */"],
 		typeSpeed: 25,
+		showCursor: false,
 	});
 }
+
 var mydefinition = function()
 {
 	$('.gray').typed(
 	{
 		strings: ["/* Let's define a function which defines me */"],
         typeSpeed: 25 , 
+        showCursor: false,
         onStringTyped : function()
         {
         	line2();
