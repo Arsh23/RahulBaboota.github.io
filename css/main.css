@@ -68,7 +68,8 @@ body
   margin-top: 20vh;
 }
 
-.sublime {
+.sublime 
+{
   position: relative;
   width: 60%;
   margin: 25px auto;
@@ -81,13 +82,16 @@ body
   font-family: 'Source Code Pro';
   font-weight: 200;
   font-size: 1.1em;
-  /* Colors */
 }
-.sublime li {
+
+.sublime li 
+{
   min-height: 25px;
   line-height: 25px;
 }
-.sublime .buttons {
+
+.sublime .buttons 
+{
   min-height: 0;
   position: absolute;
   top: -18px;
@@ -97,7 +101,9 @@ body
   background-color: #ff5d5b;
   border: 1px solid #e64344;
 }
-.sublime .buttons:before, .sublime .buttons:after {
+
+.sublime .buttons:before, .sublime .buttons:after 
+{
   position: absolute;
   content: "";
   width: 13px;
@@ -105,80 +111,114 @@ body
   border-radius: 100%;
   top: -1px;
 }
-.sublime .buttons:before {
+
+.sublime .buttons:before 
+{
   left: 20px;
   border: 1px solid #e3a041;
   background-color: #ffbc4c;
 }
-.sublime .buttons:after {
+
+.sublime .buttons:after 
+{
   left: 40px;
   border: 1px solid #13ad46;
   background-color: #00c956;
 }
-.sublime .tab {
+
+.sublime .tab 
+{
   margin-left: 2%;
   list-style: none;
 }
-.sublime .blue {
+
+.sublime .blue 
+{
   color: #66d9ef;
 }
-.sublime .purple {
+
+.sublime .purple 
+{
   color: #8a7bff;
 }
-.sublime .red {
+
+.sublime .red 
+{
   color: #e92772;
 }
-.sublime .green {
+
+.sublime .green 
+{
   color: #a6e22d;
 }
-.sublime .orange {
+.sublime .orange 
+{
   color: #fd9720;
 }
-.sublime .yellow {
+.sublime .yellow 
+{
   color: #e6db74;
 }
-.sublime .gray {
+
+.sublime .gray 
+{
   color: #8f908a;
 }
-.sublime .cursor:before {
+
+.sublime .cursor:before 
+{
   opacity: 0;
   content: "|";
   color: #f1f1f1;
   -webkit-animation: blink 0.8s infinite;
-          animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite;
 }
-@-webkit-keyframes blink {
-  0% {
+
+
+@-webkit-keyframes blink 
+{
+  0% 
+  {
     opacity: 0;
   }
-  50% {
+  50% 
+  {
     opacity: 1;
   }
-  100% {
+  100% 
+  {
     opacity: 0;
   }
 }
-@keyframes blink {
-  0% {
+
+@keyframes blink 
+{
+  0% 
+  {
     opacity: 0;
   }
-  50% {
+  50% 
+  {
     opacity: 1;
   }
-  100% {
+  100% 
+  {
     opacity: 0;
   }
 }
 
 @keyframes macbook 
 {
-  0% {
+  0% 
+  {
     transform: translateY(300px);
   }
-  50% {
+  50% 
+  {
     transform: translateY(10px);
   }
-  100% {
+  100% 
+  {
     transform: translateY(0px);
   }
 }
@@ -192,14 +232,17 @@ body
 
 @keyframes smoke 
 {
-  0% {
+  0% 
+  {
     transform: translateY(0px);
     opacity: 1;
   }
-  50% {
+  50% 
+  {
     opacity: .5;
   }
-  100% {
+  100% 
+  {
     transform: translateY(-15px);
     opacity: 0;
   }
@@ -207,15 +250,18 @@ body
 
 @keyframes coder 
 {
-  0% {
+  0% 
+  {
     transform: scale(0);
     opacity: 0;
   }
-  50% {
+  50% 
+  {
     transform: scale(1.5);
     opacity: 1;
   }
-  100% {
+  100% 
+  {
     transform: scale(1);
     opacity: 1;
   }
