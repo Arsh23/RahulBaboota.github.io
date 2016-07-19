@@ -6,7 +6,7 @@
 body 
 {
   margin: 0;
-  background: #FF5370;
+  background: #01579B;
 }
 
 .code 
@@ -137,7 +137,12 @@ body
   color: #66d9ef;
 }
 
-.sublime .purple 
+.sublime .purple1 
+{
+  color: #8a7bff;
+}
+
+.sublime .purple2
 {
   color: #8a7bff;
 }
@@ -163,6 +168,21 @@ body
 .sublime .gray 
 {
   color: #8f908a;
+}
+
+.sublime .white1
+{
+  color: #FFFFFF;
+}
+
+.sublime .white2
+{
+  color: #FFFFFF;
+}
+
+.sublime .blue2
+{
+  color: #18FFFF;
 }
 
 .sublime .cursor:before 
