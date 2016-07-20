@@ -127,7 +127,7 @@ var mydefinition = function()
 {
 	$('.gray').typed(
 	{
-		strings: ["/* Let's define a function which defines me */"],
+		strings: ["/* Hi there . Let's define a function which defines me */"],
         typeSpeed: 25 , 
         showCursor: false,
         onStringTyped : function()
@@ -137,4 +137,17 @@ var mydefinition = function()
 	});
 }
 
-mydefinition();
+
+$(document).ready(function()
+{
+	$('#sublime-text').fadeOut(0, function()
+		{
+			$('#sublime-text').fadeIn(1000);
+		});
+	$('#header-line').fadeOut(0 , function()
+	{
+		$('#header-line').fadeIn(1000);	
+	})
+	
+	mydefinition();
+})
