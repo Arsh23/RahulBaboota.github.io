@@ -137,6 +137,57 @@ var mydefinition = function()
 	});
 }
 
+var hrappear = function()
+{
+	$('.home').hover(function()
+	{
+    	$('.hr1').css("background-color", "#e92772");
+    }, 
+    function()
+    {
+    	$('.hr1').css("background-color", "#01579B");
+	});
+
+	$('.about-me').hover(function()
+	{
+    	$('.hr2').css("background-color", "#66d9ef");
+    }, 
+    function()
+    {
+    	$('.hr2').css("background-color", "#01579B");
+	});
+
+	$('.work-experience').hover(function()
+	{
+    	$('.hr3').css("background-color", "#76FF03");
+    }, 
+    function()
+    {
+    	$('.hr3').css("background-color", "#01579B");
+	});
+
+	$('.projects').hover(function()
+	{
+    	$('.hr4').css("background-color", "#FFFF00");
+    }, 
+    function()
+    {
+    	$('.hr4').css("background-color", "#01579B");
+	});
+
+	$('.contact-info').hover(function()
+	{
+    	$('.hr5').css("background-color", "#E040FB");
+    }, 
+    function()
+    {
+    	$('.hr5').css("background-color", "#01579B");
+	});
+}
+
+
+hrappear();
+
 
 $(document).ready(function()
 {

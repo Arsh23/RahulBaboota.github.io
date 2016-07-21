@@ -222,7 +222,7 @@ body
 { 
   height: 60px;
   width: 120px;
-  cursor: 'pointer';
+  cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out; /* Safari */
   transition: all 0.5s ease-in-out;
   /*background-color: black;*/
@@ -233,12 +233,11 @@ body
   color: #FFFFFF;
 }
 
-
-
 #navbar .about-me
 { 
   height: 60px;
   width: 90px;
+  cursor: pointer;
   /*background-color: yellow;*/
   margin-left: 110px;
   margin-top: -60px;
@@ -255,6 +254,7 @@ body
 { 
   height: 60px;
   width: 120px;
+  cursor: pointer;
   /*background-color: orange;*/
   margin-left: 220px;
   margin-top: -60px;
@@ -271,6 +271,7 @@ body
 { 
   height: 60px;
   width: 130px;
+  cursor: pointer;
   /*background-color: blue;*/
   margin-left: 320px;
   margin-top: -60px;
@@ -287,6 +288,7 @@ body
 { 
   height: 60px;
   width: 120px;
+  cursor: pointer;
   /*background-color: pink;*/
   margin-left: 420px;
   margin-top: -60px;
@@ -307,11 +309,8 @@ body
   /*background-color: #FFFFFF;*/
   margin-top: -5px;
   margin-left: 1005px;
-}
-
-.hr1:hover
-{
-  /*background-color: #e92772;*/
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
 }
 
 .hr2
@@ -321,6 +320,8 @@ body
   /*background-color: #FFFFFF;*/
   margin-top: -1px;
   margin-left: 1100px;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
 }
 
 .hr3
@@ -330,6 +331,8 @@ body
   /*background-color: #FFFFFF;*/
   margin-top: -1px;
   margin-left: 1200px;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
 }
 
 .hr4
@@ -339,6 +342,8 @@ body
   /*background-color: #FFFFFF;*/
   margin-top: -1px;
   margin-left: 1340px;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
 }
 
 .hr5
@@ -348,6 +353,8 @@ body
   /*background-color: #FFFFFF;*/
   margin-top: -1px;
   margin-left: 1415px;
+  -webkit-transition: all 0.5s ease-in-out; /* Safari */
+  transition: all 0.5s ease-in-out;
 }
 
 
