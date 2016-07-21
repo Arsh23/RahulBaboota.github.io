@@ -203,6 +203,66 @@ body
   background-color: #FFFFFF;
 }
 
+#navbar
+{
+  height: 60px;
+  width: 540px;
+  /*background-color: #FFFFFF;*/
+  margin-top: -90px;
+  margin-left: 980px;
+  font-family: 'Poiret One';
+  font-size: 16px; 
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+#navbar .home
+{ 
+  height: 60px;
+  width: 120px;
+  /*background-color: black;*/
+}
+
+#navbar .about-me
+{ 
+  height: 60px;
+  width: 90px;
+  /*background-color: yellow;*/
+  margin-left: 110px;
+  margin-top: -60px;
+}
+
+#navbar .work-experience
+{ 
+  height: 60px;
+  width: 120px;
+  /*background-color: orange;*/
+  margin-left: 220px;
+  margin-top: -60px;
+}
+
+#navbar .projects
+{ 
+  height: 60px;
+  width: 130px;
+  /*background-color: blue;*/
+  margin-left: 320px;
+  margin-top: -60px;
+}
+
+#navbar .contact-info
+{ 
+  height: 60px;
+  width: 120px;
+  /*background-color: pink;*/
+  margin-left: 420px;
+  margin-top: -60px;
+}
+
+
+
+
 @-webkit-keyframes blink 
 {
   0% 

@@ -117,7 +117,7 @@ var line10 = function()
 {
 	$('.gray2').typed(
 	{
-		strings: ["/* Have fun exploring Me!! */"],
+		strings: ["/* Have fun exploring Me !! */"],
 		typeSpeed: 25,
 		showCursor: false,
 	});
@@ -127,7 +127,7 @@ var mydefinition = function()
 {
 	$('.gray').typed(
 	{
-		strings: ["/* Hi there . Let's define a function which defines me */"],
+		strings: ["/* Hi there . Let's define a function which defines me. */"],
         typeSpeed: 25 , 
         showCursor: false,
         onStringTyped : function()
