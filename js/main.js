@@ -189,6 +189,21 @@ var hrappear = function()
 
 hrappear();
 
+var illuminateButton = function()
+{
+	$('#next-page-button').illuminate(
+	{
+		'intensity': '0.5',
+		'color': '#EC407A',
+		'blink': 'true',
+		'blinkSpeed': '1200',
+		'outerGlow': 'true',
+		'outerGlowSize': '50px',
+		'outerGlowColor': '#F50057'
+	});
+}
+
+// illuminateButton();
 
 $(document).ready(function()
 {
@@ -200,6 +215,8 @@ $(document).ready(function()
 	{
 		$('#header-line').fadeIn(1000);	
 	})
+
+	illuminateButton();
 	
 	mydefinition();
 })

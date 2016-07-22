@@ -211,8 +211,8 @@ body
   /*background-color: black;*/
   margin-top: -90px;
   margin-left: 980px;
-  font-family: 'Open Sans';
-  font-size: 15px; 
+  font-family: 'Poiret One';
+  font-size: 17px; 
   text-align: center;
   color: #BDBDBD;  
 }
@@ -356,6 +356,32 @@ body
   -webkit-transition: all 0.5s ease-in-out; /* Safari */
   transition: all 0.5s ease-in-out;
 }
+
+#next-page-button
+{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 93%;
+  margin-top: 20%;
+  cursor: pointer;
+  background-color: #e92772;
+  /*box-shadow: 0 2px 6px #F50057, 0 15px 40px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.1), -10px 10px 30px rgba(0, 0, 0, 0.1), inset 0 0 5px #C2185B, inset 0 5px 10px #E91E63;*/
+}
+
+#next-page-button .next-page-icon
+{
+  position: relative;
+  top: 30%;
+  left: 40%;
+}
+
+.fa-chevron-right
+{
+  color: #FFFFFF;
+}
+
 
 
 
