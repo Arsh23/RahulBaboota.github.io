@@ -9,13 +9,15 @@ body
   background: #01579B;
 }
 
-.code 
+.viewport1
 {
   width: 100%;
   /*background: #f46c69;*/
   overflow: hidden;
-  position: relative;
+  position: absolute;
   height: 100vh;
+  top: 0;
+  right: 100;
 }
 
 .svg 
@@ -26,6 +28,107 @@ body
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.st0 {
+    fill: #EFEFEF;
+}
+
+.st1 {
+    fill: #E3E4E5;
+}
+
+.st2 {
+    fill: #2A333A;
+}
+
+.st3 {
+    opacity: 0.5;
+    fill: #9E9E9E;
+}
+
+.st4 {
+    fill: #5C5E60;
+}
+
+.st5 {
+    fill: #404244;
+}
+
+.st6 {
+    fill: #EBECED;
+}
+
+.st7 {
+    fill: #FFFFFF;
+}
+
+.st8 {
+    fill: #3C2415;
+}
+
+.st9 {
+    fill: #432818;
+}
+
+.st10 {
+    fill: #563726;
+}
+
+.st11 {
+    fill: #FCFCFC;
+}
+
+.st12 {
+    opacity: 0.5;
+    fill: #FCFCFC;
+}
+
+.st13 {
+    fill: none;
+    stroke: #EBECED;
+    stroke-width: 5;
+    stroke-miterlimit: 10;
+}
+
+.st14 {
+    fill: #FEFEFE;
+}
+
+.st15 {
+    fill: #EF7665;
+}
+
+.st16 {
+    fill: #A4D9E4;
+}
+
+.st17 {
+    fill: #B8C7CD;
+}
+
+.st18 {
+    fill: #474A4E;
+}
+
+.st19 {
+    fill: #65B6C1;
+}
+
+.st20 {
+    fill: #F46C69;
+}
+
+.st21 {
+    fill: #7C7F83;
+}
+
+.st22 {
+    fill: #FFFFFE;
+}
+
+.st23 {
+    fill: #F96759;
 }
 
 #macbook 
