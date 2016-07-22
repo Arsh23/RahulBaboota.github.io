@@ -177,21 +177,10 @@ body
   animation: smoke 3s infinite;
 }
 
-#intro-box
-{
-  height: 250px;
-  width: 350px;
-  color: #FFFFFF;
-  margin-left: 25vh;
-  margin-top: 30vh;
-  font-family: 'Palanquin';
-  font-weight: 200;
-  font-size: 3vh;
-}
-
 #sublime-text
 {
-  margin-top: 18vh;
+  position: relative;
+  /*top: 100px;*/
 }
 
 .sublime 
@@ -208,7 +197,6 @@ body
   font-family: 'Source Code Pro';
   font-weight: 200;
   font-size: 1.1em;
-  opacity: 0;
 }
 
 .sublime li 
