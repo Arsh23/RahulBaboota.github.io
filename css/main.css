@@ -9,16 +9,17 @@ body
   background: #01579B;
 }
 
-.viewport1
+#viewport1
 {
   width: 100%;
   /*background: #f46c69;*/
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   top: 0;
   right: 100;
 }
+
 
 .svg 
 {
