@@ -127,8 +127,9 @@ var mydefinition = function()
 {
 	$('.gray').typed(
 	{
-		strings: ["/* Hi there . Let's define a function which defines me. */"],
+		strings: ["/* Hi there . ^500 Let's define a function which defines me. */"],
         typeSpeed: 25 , 
+        startDelay: 1000 ,
         showCursor: false,
         onStringTyped : function()
         {
