@@ -1,3 +1,5 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
 * 
 {
   box-sizing: border-box;
@@ -6,20 +8,20 @@
 body 
 {
   margin: 0;
-  background: #01579B;
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 
 #viewport1
 {
   width: 100%;
-  /*background: #f46c69;*/
+  background: #01579B;
   overflow: hidden;
   position: fixed;
   height: 100vh;
-  top: 0;
-  right: 100;
+  top: 0px;
+  left: 0;
 }
-
 
 .svg 
 {
@@ -31,104 +33,130 @@ body
   margin: auto;
 }
 
-.st0 {
+/*Color schemes for the svg icons*/
+
+.st0 
+{
     fill: #EFEFEF;
 }
 
-.st1 {
+.st1 
+{
     fill: #E3E4E5;
 }
 
-.st2 {
+.st2 
+{
     fill: #2A333A;
 }
 
-.st3 {
+.st3 
+{
     opacity: 0.5;
     fill: #9E9E9E;
 }
 
-.st4 {
+.st4 
+{
     fill: #5C5E60;
 }
 
-.st5 {
+.st5 
+{
     fill: #404244;
 }
 
-.st6 {
+.st6 
+{
     fill: #EBECED;
 }
 
-.st7 {
+.st7 
+{
     fill: #FFFFFF;
 }
 
-.st8 {
+.st8 
+{
     fill: #3C2415;
 }
 
-.st9 {
+.st9 
+{
     fill: #432818;
 }
 
-.st10 {
+.st10 
+{
     fill: #563726;
 }
 
-.st11 {
+.st11 
+{
     fill: #FCFCFC;
 }
 
-.st12 {
+.st12 
+{
     opacity: 0.5;
     fill: #FCFCFC;
 }
 
-.st13 {
+.st13 
+{
     fill: none;
     stroke: #EBECED;
     stroke-width: 5;
     stroke-miterlimit: 10;
 }
 
-.st14 {
+.st14 
+{
     fill: #FEFEFE;
 }
 
-.st15 {
+.st15 
+{
     fill: #EF7665;
 }
 
-.st16 {
+.st16 
+{
     fill: #A4D9E4;
 }
 
-.st17 {
+.st17 
+{
     fill: #B8C7CD;
 }
 
-.st18 {
+.st18 
+{
     fill: #474A4E;
 }
 
-.st19 {
+.st19 
+{
     fill: #65B6C1;
 }
 
-.st20 {
+.st20 
+{
     fill: #F46C69;
 }
 
-.st21 {
+.st21 
+{
     fill: #7C7F83;
 }
 
-.st22 {
+.st22 
+{
     fill: #FFFFFE;
 }
 
-.st23 {
+.st23 
+{
     fill: #F96759;
 }
 
@@ -236,6 +264,8 @@ body
   list-style: none;
 }
 
+/*Color schemes for sublime text*/
+
 .sublime .blue 
 {
   color: #66d9ef;
@@ -260,10 +290,12 @@ body
 {
   color: #a6e22d;
 }
+
 .sublime .orange 
 {
   color: #fd9720;
 }
+
 .sublime .yellow 
 {
   color: #e6db74;
@@ -312,9 +344,9 @@ body
 {
   height: 35px;
   width: 540px;
-  /*background-color: black;*/
-  margin-top: -90px;
-  margin-left: 980px;
+  position: fixed;
+  right: 7%;
+  top: 4%;
   font-family: 'Poiret One';
   font-size: 17px; 
   text-align: center;
@@ -406,69 +438,15 @@ body
 }
 
 
-.hr1
-{
-  height: 1px;
-  width: 70px;
-  /*background-color: #FFFFFF;*/
-  margin-top: -5px;
-  margin-left: 1005px;
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
-}
-
-.hr2
-{
-  height: 1px;
-  width: 70px;
-  /*background-color: #FFFFFF;*/
-  margin-top: -1px;
-  margin-left: 1100px;
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
-}
-
-.hr3
-{
-  height: 1px;
-  width: 120px;
-  /*background-color: #FFFFFF;*/
-  margin-top: -1px;
-  margin-left: 1200px;
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
-}
-
-.hr4
-{
-  height: 1px;
-  width: 60px;
-  /*background-color: #FFFFFF;*/
-  margin-top: -1px;
-  margin-left: 1340px;
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
-}
-
-.hr5
-{
-  height: 1px;
-  width: 85px;
-  /*background-color: #FFFFFF;*/
-  margin-top: -1px;
-  margin-left: 1415px;
-  -webkit-transition: all 0.5s ease-in-out; /* Safari */
-  transition: all 0.5s ease-in-out;
-}
-
 #next-page-button
 {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: white;
-  margin-left: 93%;
-  margin-top: 20%;
+  position: fixed;
+  left: 93%;
+  top: 50%;
   cursor: pointer;
   background-color: #e92772;
   /*box-shadow: 0 2px 6px #F50057, 0 15px 40px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.05), 10px 10px 30px rgba(0, 0, 0, 0.1), -10px 10px 30px rgba(0, 0, 0, 0.1), inset 0 0 5px #C2185B, inset 0 5px 10px #E91E63;*/
@@ -486,8 +464,7 @@ body
   color: #FFFFFF;
 }
 
-
-
+/*Keyframe Animation Effects */
 
 @-webkit-keyframes blink 
 {
@@ -580,3 +557,15 @@ body
     opacity: 1;
   }
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*#viewport2
+{
+  position: fixed;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0%;
+}*/
