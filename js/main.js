@@ -128,7 +128,7 @@ var illuminateButton = function() {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 var line2 = function() {
-    $('.yellow').typed({
+    $('.yellow-viewport2').typed({
         strings: ["def  "],
         typeSpeed: 25,
         startDelay: 0,
@@ -140,22 +140,44 @@ var line2 = function() {
 }
 
 var line3 = function() {
-    $('.blue').typed({
+    $('.blue-viewport2').typed({
         strings: ["about_rahul():"],
         typeSpeed: 25,
         startDelay: 0,
         showCursor: false,
-        // onStringTyped: function()
-        // {
-        // 	line3();
-        // }
+        onStringTyped: function() {
+            line4();
+        }
     });
 }
 
+var line4 = function() {
+    $('.purple-viewport2').typed({
+        strings: ['about_rahul = '],
+        typeSpeed: 25,
+        startDelay: 0,
+        showCursor: false,
+        onStringTyped: function() {
+            line5();
+        }
+    })
+}
+
+var line5 = function() {
+    $('.white-viewport2').typed({
+        strings: [' " I am a huge fan of astronomy . '],
+        typeSpeed: 25,
+        startDelay: 0,
+        showCursor: false,
+        onStringTyped: function() {
+            appearAstronomy();
+        }
+    })
+}
 
 var aboutMe = function() {
-    $('.gray').typed({
-        strings: ["## Let's talk a bit about who I am !! "],
+    $('.gray-viewport2').typed({
+        strings: ["## Let's paint the canvas with a little bit of Rahul .. Shall we !! "],
         typeSpeed: 25,
         startDelay: 1000,
         showCursor: false,
@@ -165,6 +187,21 @@ var aboutMe = function() {
     });
 }
 
+var appearAstronomy = function() {
+    $('#viewport2').fadeOut(750, function() {
+        $('#viewport1').css('opacity', '0');
+        $('#viewport2').css('background-image', 'radial-gradient(1600px at 70% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%)');
+        $('#viewport2').fadeIn(750);
+        $('.rocket').css('opacity', '100');
+        $('.rocket').fadeIn(750);
+        $('.rocket2').css('opacity', '100');
+        $('.rocket2').fadeIn(750);
+        $('#moon').css('opacity', '100');
+    })
+
+}
+
+
 aboutMe();
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -173,16 +210,16 @@ aboutMe();
 
 // $(document).ready(function()
 // {
-// 	$('#sublime-text').fadeOut(0, function()
-// 		{
-// 			$('#sublime-text').fadeIn(1000);
-// 		});
-// 	$('#header-line').fadeOut(0 , function()
-// 	{
-// 		$('#header-line').fadeIn(1000);	
-// 	})
+//  $('#sublime-text').fadeOut(0, function()
+//      {
+//          $('#sublime-text').fadeIn(1000);
+//      });
+//  $('#header-line').fadeOut(0 , function()
+//  {
+//      $('#header-line').fadeIn(1000); 
+//  })
 
-// 	illuminateButton();
+//  illuminateButton();
 
-// 	mydefinition();
+//  mydefinition();
 // })
