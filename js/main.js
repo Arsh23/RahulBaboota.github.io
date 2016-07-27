@@ -170,7 +170,7 @@ var line5 = function() {
         startDelay: 0,
         showCursor: false,
         onStringTyped: function() {
-            appearAstronomy();
+            // appearAstronomy();
         }
     })
 }

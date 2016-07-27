@@ -491,17 +491,18 @@ body {
 
 #viewport2 {
     position: fixed;
-    background-color: white;
+    background-color: #3D5AFE;
     /*background-image: radial-gradient(1600px at 70% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%);*/
     height: 100%;
     width: 100%;
     top: 0px;
-    left: 100%;
+    left: 0%;
 }
 
 #sublime-text-viewport2 {
     position: relative;
     left: 25%;
+    top: 20%;
 }
 
 .sublime-viewport2 {
@@ -1285,409 +1286,218 @@ body {
     }
 }
 
-.rocket2 {
-    position: absolute;
-    left: 70%;
-    top: 70%;
-    opacity: 0;
+
+/* (Books) */
+
+#bookshelf1 {
+    position: fixed;
+    top: 40%;
+    left: 10%;
 }
 
-.rocket2 span {
-    display: block;
-    width: 65px;
-    height: 20px;
-    background-color: #d11c40;
-    position: absolute;
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
-    border-left: 3px solid #5b595d;
-    border-right: 3px solid #D11C40;
-    -webkit-animation: wiggling 300ms infinite;
-    -moz-animation: wiggling 300ms infinite;
-    -o-animation: wiggling 300ms infinite;
-    -ms-animation: wiggling 300ms infinite;
-    animation-timing-function: ease-out;
+#shelf-outer {
+    float: right;
+    height: 480px;
+    width: 426px;
+    perspective-origin: 213px 240px;
+    transform-origin: 213px 240px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 140px 0px 0px;
+    transition: all 1s ease 0s;
 }
 
-.rocket2 span:before,
-.rocket2 span:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 51%;
-    top: 50%;
-    height: 50%;
-    background-color: #a71732;
+#shelf-inner {
+    height: 440px;
+    width: 426px;
+    perspective-origin: 213px 220px;
+    transform-origin: 213px 220px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
 }
 
-.rocket2 span:before {
-    right: 0;
-    border-bottom-right-radius: 100%;
+#shelf-top {
+    height: 158px;
+    position: relative;
+    width: 360px;
+    perspective-origin: 180px 79px;
+    transform-origin: 180px 79px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 0px 0px 33px;
 }
 
-.rocket2 span:after {
-    left: -3px;
-    border-left: 3px solid #444244;
-}
-
-
-/* fins */
-
-.rocket2 span i.fin-top,
-.rocket2 span i.fin-bottom {
-    display: block;
-    position: absolute;
-    left: -4px;
-    width: 10px;
-    height: 10px;
-    background-color: #7f0e27;
-    border-left: 3px solid #D11C40;
-}
-
-.rocket2 span i.fin-top:before,
-.rocket2 span i.fin-bottom:before {
-    content: '';
-    position: absolute;
-    left: 5px;
-    width: 10px;
-    height: 100%;
-    background-color: #7f0e27;
-    bottom: 0;
-}
-
-.rocket2 span i.fin-top {
-    top: -10px;
-    -webkit-transform: skew(35deg, 0deg);
-    -moz-transform: skew(35deg, 0deg);
-    -o-transform: skew(35deg, 0deg);
-    transform: skew(35deg, 0deg);
-}
-
-.rocket2 span i.fin-bottom {
-    bottom: -10px;
-    -webkit-transform: skew(-35deg, 0deg);
-    -moz-transform: skew(-35deg, 0deg);
-    -o-transform: skew(-35deg, 0deg);
-    transform: skew(-35deg, 0deg);
-}
-
-.rocket2 span i.fin-top:before {
-    -webkit-transform: skew(40deg, 0deg);
-    -moz-transform: skew(40deg, 0deg);
-    -o-transform: skew(40deg, 0deg);
-    transform: skew(40deg, 0deg);
-}
-
-.rocket2 span i.fin-bottom:before {
-    -webkit-transform: skew(-40deg, 0deg);
-    -moz-transform: skew(-40deg, 0deg);
-    -o-transform: skew(-40deg, 0deg);
-    transform: skew(-40deg, 0deg);
-}
-
-.rocket2 span i.faya {
-    position: absolute;
-    display: block;
-    left: -33px;
-    width: 30px;
-    height: 100%;
-    overflow: hidden;
-}
-
-.rocket2 span i.faya:before {
-    position: absolute;
+#shelf-top:after {
+    background-position: 0% 100%;
     content: '';
     display: block;
-    width: 220px;
-    height: 20px;
-    left: 0;
-    top: 0;
-    border-radius: 100%;
-    background-color: #f45224;
-    -webkit-animation: vrouming 200ms infinite;
-    -moz-animation: vrouming 200ms infinite;
-    -o-animation: vrouming 200ms infinite;
-    animation: vrouming 200ms infinite;
+    height: 210px;
+    width: 426px;
+    perspective-origin: 213px 105px;
+    transform-origin: 213px 105px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/wall-bookshelf.png") no-repeat scroll 0% 100% / 100% padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 0px 0px -38px;
 }
 
-.rocket2 span i.faya:after {
+#shelf-top-inner {
+    bottom: 0px;
+    height: 115px;
     position: absolute;
+    width: 360px;
+    perspective-origin: 180px 57.5px;
+    transform-origin: 180px 57.5px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+}
+
+#shelf-top-inner-1,
+#shelf-top-inner-2,
+#shelf-top-inner-3 {
+    float: left;
+    height: 115px;
+    position: relative;
+    text-align: center;
+    width: 118.797px;
+    perspective-origin: 59.3906px 57.5px;
+    transform-origin: 59.3906px 57.5px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+}
+
+#shelf-top-inner-1-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 115px;
+    position: relative;
+    text-align: center;
+    width: 92px;
+    z-index: 1;
+    perspective-origin: 46px 57.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 46px 57.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book1.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 13.4063px 0px 13.3906px;
+    transition: transform 0.1s ease 0s;
+}
+
+#shelf-top-inner-2-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 115px;
+    position: relative;
+    text-align: center;
+    width: 87px;
+    z-index: 1;
+    perspective-origin: 43.5px 57.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 43.5px 57.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book2.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 15.9063px 0px 15.8906px;
+    transition: transform 0.1s ease 0s;
+}
+
+#shelf-top-inner-3-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 115px;
+    position: relative;
+    text-align: center;
+    width: 90px;
+    z-index: 1;
+    perspective-origin: 45px 57.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 45px 57.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book3.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 14.4063px 0px 14.3906px;
+    transition: transform 0.1s ease 0s;
+}
+
+#shelf-bottom {
+    height: 164px;
+    position: relative;
+    width: 360px;
+    perspective-origin: 180px 82px;
+    transform-origin: 180px 82px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 20px 0px 0px 33px;
+}
+
+#shelf-bottom:after {
+    background-position: 0% 100%;
     content: '';
     display: block;
-    width: 220px;
-    height: 10px;
-    left: 10px;
-    top: 5px;
-    border-radius: 100%;
-    background-color: #ffedd5;
-    -webkit-animation: vrouming 200ms infinite;
-    -moz-animation: vrouming 200ms infinite;
-    -o-animation: vrouming 200ms infinite;
-    animation: vrouming 200ms infinite;
+    height: 216px;
+    width: 426px;
+    perspective-origin: 213px 108px;
+    transform-origin: 213px 108px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/wall-bookshelf.png") no-repeat scroll 0% 100% / 100% padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 0px 0px -38px;
 }
 
-.rocket2 span i.wastes {
+#shelf-bottom-inner {
+    bottom: 0px;
+    height: 125px;
     position: absolute;
-    left: -53px;
-    top: -10px;
-    width: 50px;
-    height: 200%;
+    width: 360px;
+    perspective-origin: 180px 62.5px;
+    transform-origin: 180px 62.5px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
 }
 
-.rocket2 span i.wastes i {
-    position: absolute;
-    width: 3px;
-    right: 0;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.5);
+#shelf-bottom-inner-1,
+#shelf-bottom-inner-2,
+#shelf-bottom-inner-3 {
+    float: left;
+    height: 125px;
+    position: relative;
+    text-align: center;
+    width: 118.797px;
+    perspective-origin: 59.3906px 62.5px;
+    transform-origin: 59.3906px 62.5px;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
 }
 
-.rocket2 span i.wastes i:nth-child(1) {
-    top: 15px;
-    -webkit-animation: wasting 500ms infinite 100ms;
-    -moz-animation: wasting 500ms infinite 100ms;
-    -o-animation: wasting 500ms infinite 100ms;
-    animation: wasting 500ms infinite 100ms;
+#shelf-bottom-inner-1-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 125px;
+    position: relative;
+    text-align: center;
+    width: 97px;
+    z-index: 1;
+    perspective-origin: 48.5px 62.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 48.5px 62.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book4.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 10.9063px 0px 10.8906px;
+    transition: transform 0.1s ease 0s;
 }
 
-.rocket2 span i.wastes i:nth-child(2) {
-    top: 17px;
-    -webkit-animation: wasting2 500ms infinite 200ms;
-    -moz-animation: wasting2 500ms infinite 200ms;
-    -o-animation: wasting2 500ms infinite 200ms;
-    animation: wasting2 500ms infinite 200ms;
+#shelf-bottom-inner-2-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 125px;
+    position: relative;
+    text-align: center;
+    width: 97px;
+    z-index: 1;
+    perspective-origin: 48.5px 62.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 48.5px 62.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book5.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 10.9063px 0px 10.8906px;
+    transition: transform 0.1s ease 0s;
 }
 
-.rocket2 span i.wastes i:nth-child(3) {
-    top: 19px;
-    -webkit-animation: wasting 500ms infinite 300ms;
-    -moz-animation: wasting 500ms infinite 300ms;
-    -o-animation: wasting 500ms infinite 300ms;
-    animation: wasting 500ms infinite 300ms;
-}
-
-.rocket2 span i.wastes i:nth-child(4) {
-    top: 21px;
-    -webkit-animation: wasting2 500ms infinite 400ms;
-    -moz-animation: wasting2 500ms infinite 400ms;
-    -o-animation: wasting2 500ms infinite 400ms;
-    animation: wasting2 500ms infinite 400ms;
-}
-
-.rocket2 span i.wastes i:nth-child(5) {
-    top: 23px;
-    -webkit-animation: wasting 500ms infinite 100ms;
-    -moz-animation: wasting 500ms infinite 100ms;
-    -o-animation: wasting 500ms infinite 100ms;
-    animation: wasting 500ms infinite 100ms;
-}
-
-
-/* wiggling */
-
-@-webkit-keyframes wiggling {
-    0% {
-        -webkit-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-    50% {
-        -webkit-transform: translate3d(0px, -4px, 0);
-        transform: translate3d(0px, -4px, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-}
-
-@-moz-keyframes wiggling {
-    0% {
-        -moz-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-    50% {
-        -moz-transform: translate3d(0px, -4px, 0);
-        transform: translate3d(0px, -4px, 0);
-    }
-    100% {
-        -moz-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-}
-
-@-o-keyframes wiggling {
-    0% {
-        -o-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-    50% {
-        -o-transform: translate3d(0px, -4px, 0);
-        transform: translate3d(0px, -4px, 0);
-    }
-    100% {
-        -o-transform: translate3d(0px, 0px, 0);
-        transform: translate3d(0px, 0px, 0);
-    }
-}
-
-@keyframes wiggling {
-    0% {
-        transform: translate3d(0px, 0px, 0);
-    }
-    50% {
-        transform: translate3d(0px, -4px, 0);
-    }
-    100% {
-        transform: translate3d(0px, 0px, 0);
-    }
-}
-
-
-/* vrouming */
-
-@-webkit-keyframes vrouming {
-    0% {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    50% {
-        -webkit-transform: translate3d(5px, 0, 0);
-        transform: translate3d(5px, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-}
-
-@-moz-keyframes vrouming {
-    0% {
-        -moz-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    50% {
-        -moz-transform: translate3d(5px, 0, 0);
-        transform: translate3d(5px, 0, 0);
-    }
-    100% {
-        -moz-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-}
-
-@-o-keyframes vrouming {
-    0% {
-        -o-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    50% {
-        -o-transform: translate3d(5px, 0, 0);
-        transform: translate3d(5px, 0, 0);
-    }
-    100% {
-        -o-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-}
-
-@keyframes vrouming {
-    0% {
-        transform: translate3d(0px, 0, 0);
-    }
-    50% {
-        transform: translate3d(5px, 0, 0);
-    }
-    100% {
-        transform: translate3d(0px, 0, 0);
-    }
-}
-
-
-/* wiggling */
-
-@-webkit-keyframes wasting {
-    0% {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-40px, -5px, 0);
-        transform: translate3d(-40px, -5px, 0);
-    }
-}
-
-@-moz-keyframes wasting {
-    0% {
-        -moz-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -moz-transform: translate3d(-40px, -5px, 0);
-        transform: translate3d(-40px, -5px, 0);
-    }
-}
-
-@-o-keyframes wasting {
-    0% {
-        -o-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -o-transform: translate3d(-40px, -5px, 0);
-        transform: translate3d(-40px, -5px, 0);
-    }
-}
-
-@keyframes wasting {
-    0% {
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        transform: translate3d(-40px, -5px, 0);
-    }
-}
-
-
-/* wasting2 */
-
-@-webkit-keyframes wasting2 {
-    0% {
-        -webkit-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -webkit-transform: translate3d(-40px, 5px, 0);
-        transform: translate3d(-40px, 5px, 0);
-    }
-}
-
-@-moz-keyframes wasting2 {
-    0% {
-        -moz-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -moz-transform: translate3d(-40px, 5px, 0);
-        transform: translate3d(-40px, 5px, 0);
-    }
-}
-
-@-o-keyframes wasting2 {
-    0% {
-        -o-transform: translate3d(0px, 0, 0);
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        -o-transform: translate3d(-40px, 5px, 0);
-        transform: translate3d(-40px, 5px, 0);
-    }
-}
-
-@keyframes wasting2 {
-    0% {
-        transform: translate3d(0px, 0, 0);
-    }
-    100% {
-        transform: translate3d(-40px, 5px, 0);
-    }
+#shelf-bottom-inner-3-content {
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 5px 0px;
+    height: 125px;
+    position: relative;
+    text-align: center;
+    width: 104px;
+    z-index: 1;
+    perspective-origin: 52px 62.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-origin: 52px 62.5px;
+    background: rgba(0, 0, 0, 0) url("http://www.turnjs.com/pics/book6.jpg") repeat scroll 0% 0% / auto padding-box border-box;
+    font: normal normal normal normal 16px / normal 'Times New Roman';
+    margin: 0px 7.40625px 0px 7.39063px;
+    transition: transform 0.1s ease 0s;
 }
