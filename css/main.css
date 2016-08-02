@@ -1290,9 +1290,9 @@ body {
 /* (Books) */
 
 #bookshelf1 {
-    position: fixed;
-    top: 40%;
-    left: 10%;
+    position: relative;
+    top: 150px;
+    right: 60%;
 }
 
 #shelf-outer {
@@ -1500,4 +1500,59 @@ body {
     font: normal normal normal normal 16px / normal 'Times New Roman';
     margin: 0px 7.40625px 0px 7.39063px;
     transition: transform 0.1s ease 0s;
+}
+
+/* (Writing Scroll) */
+
+#writing {
+    position: relative;
+    bottom: 20%;
+    right: 20%;
+}
+
+.scroll-wrapper {
+  position: relative;
+  width: 300px;
+  margin: 30px auto;
+  background-color: #e2cd9e;
+  font-family: Parisienne, serif;
+  color: #333;
+}
+
+.scroll-wrapper::before, .scroll-wrapper::after {
+  content: '';
+  display: block;
+  width: 170%;
+  height: 60px;
+  position: absolute;
+  background-image: url("https://dl.dropboxusercontent.com/u/19745853/scroll-end.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: -35%;
+}
+
+.scroll-wrapper::before {
+  top: -15px;
+}
+
+.scroll-wrapper::after {
+  bottom: -15px;
+  transform: scaleY(-1);
+}
+
+.scroll-wrapper .scroll-contents {
+  overflow: hidden;
+  padding: 45px 15px;
+  animation: scroll-bounce 0.6s cubic-bezier(0.23, 1.21, 0.76, 1.37) 1s;
+  animation-fill-mode: forwards;
+  height: 0px;
+}
+
+@keyframes scroll-bounce {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 350px;
+  }
 }
