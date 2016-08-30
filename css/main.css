@@ -2115,7 +2115,7 @@ body {
   position: absolute;
   left: -45vh;
   top: 10vh;
-  opacity: 0;
+  opacity: 100;
 }
 
 .sub-content {
