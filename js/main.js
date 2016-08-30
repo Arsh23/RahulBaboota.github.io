@@ -292,16 +292,20 @@ var appearTravel = function() {
     $('.suitcase').addClass('animated slideInLeft');
 }
 
+// appearTravel();
+
 // Disappearance Function for Travel Section !! 
 
 var disappearTravel = function() {
     $('.box-ticket').fadeOut(750);
     $('.box-ticket').css('opacity','0');
+    // $('#ticket').empty()
     $('.plane').fadeOut(750);
     $('.plane').css('opacity','0');
+    // $('#plane').empty()
     $('.suitcase').fadeOut(750);
     $('.suitcase').css('opacity','0');
-
+    // $('#suitcase').empty()
 }
 
 // Defining the Text to be written in the Sublime Box
