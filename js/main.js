@@ -297,17 +297,16 @@ var appearTravel = function() {
 // Disappearance Function for Travel Section !! 
 
 var disappearTravel = function() {
-    $('.box-ticket').fadeOut(750);
-    $('.box-ticket').css('opacity','0');
-    // $('#ticket').empty()
-    $('.plane').fadeOut(750);
-    $('.plane').css('opacity','0');
-    // $('#plane').empty()
-    $('.suitcase').fadeOut(750);
-    $('.suitcase').css('opacity','0');
-    // $('#suitcase').empty()
+    $('.box-ticket').fadeOut(750, function(){
+        $('#ticket').empty();
+    });
+    $('.plane').fadeOut(750, function(){
+        $('#palne').empty()
+    });
+    $('.suitcase').fadeOut(750, function(){
+        $('#suitcase').empty()
+    });
 }
-
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
@@ -379,7 +378,7 @@ var line6_viewport2 = function() {
         showCursor: false,
         onStringTyped: function() {
             appearTravel();
-            // line7_viewport2();
+            line7_viewport2();
         }
     })
 }
