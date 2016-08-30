@@ -1872,7 +1872,7 @@ body {
 .box-ticket {
   position: absolute;
   bottom: 50%;
-  opacity: 0;
+  opacity: 100;
   left: 20%;
 }
 
@@ -2253,7 +2253,7 @@ body {
     position: relative;
     margin-left: 15vh;
     margin-bottom: 20px;
-    opacity: 0;
+    opacity: 100;
 }
 
 #typewriter {

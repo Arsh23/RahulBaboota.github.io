@@ -153,6 +153,71 @@ nextPageButtonClick();
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
+// HTML code for travel objects
+
+var suitcase = 
+'<div class="suitcase">'+
+    '<img src="Images/suitcase.png">'+
+'</div>'
+
+var ticket = 
+'<div class="box-ticket">'+
+    '<ul class="left-ticket">'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+    '</ul>'+
+    '<ul class="right-ticket">'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+        '<li></li>'+
+    '</ul>'+
+    '<div class="ticket">'+
+        '<span class="airline">Emirates</span>'+
+        '<span class="airline airlineslip">Emirates</span>'+
+        '<span class="boarding">Boarding pass</span>'+
+        '<div class="content">'+
+            '<span class="jfk">PRG</span>'+
+            '<span class="sfo">JFK</span>'+
+            '<span class="jfk jfkslip">PRG</span>'+
+            '<span class="sfo sfoslip">JFK</span>'+
+            '<div class="sub-content">'+
+                '<span class="watermark">Emirates</span>'+
+                '<span class="name">PASSENGER NAME<br><span>Rahul Baboota</span></span>'+
+                '<span class="flight">FLIGHT N&deg;<br><span>X3-65C3</span></span>'+
+                '<span class="gate">GATE<br><span>11B</span></span>'+
+                '<span class="seat">SEAT<br><span>45A</span></span>'+
+                '<span class="boardingtime">BOARDING TIME<br><span>6:00 AM ON OCTOBER 2015</span></span>'+
+                '<span class="flight flightslip">FLIGHT N&deg;<br><span>X3-65C3</span></span>'+
+                '<span class="seat seatslip">SEAT<br><span>45A</span></span>'+
+                '<span class="name nameslip">PASSENGER NAME<br><span>Rahul Baboota</span></span>'+
+            '</div>'+
+        '</div>'+
+    '</div>'+
+'</div>'
+
 // Sublime Box FadeIn Entry
 
 var sublimeEntry = function() {
@@ -160,7 +225,7 @@ var sublimeEntry = function() {
     line1_viewport2();
 }
 
-// // Changing the color of the background 
+// Changing the color of the background 
 
 var changeBackground = function() {
     $('#viewport2').fadeOut(750, function() {
@@ -172,11 +237,11 @@ var changeBackground = function() {
 // // Appearance Function for Travel Section !!
 
 var appearTravel = function() {
-    $('.box-ticket').css('opacity', '100');
+    $('#ticket').append(ticket);
     $('.box-ticket').addClass('animated slideInLeft');
     $('.plane').css('opacity', '100');
     $('.plane').addClass('animated zoomIn');
-    $('.suitcase').css('opacity', '100');
+    $('#suitcase').append(suitcase);
     $('.suitcase').addClass('animated slideInLeft');
 }
 
