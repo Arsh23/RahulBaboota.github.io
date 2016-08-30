@@ -118,6 +118,9 @@ var line10_viewport1 = function() {
         strings: ["/* Have fun exploring Me !! */"],
         typeSpeed: 25,
         showCursor: false,
+        onStringTyped: function() {
+             $('#next-page-button').addClass('animated bounce');
+        }
     });
 }
 
@@ -276,7 +279,7 @@ var sublimeEntry = function() {
 
 var changeBackground = function() {
     $('#viewport2').fadeOut(750, function() {
-        $('#viewport2').css('background', '#1976D2');
+        $('#viewport2').css('background', '#FF4081');
         $('#viewport2').fadeIn(750);
     })
 };
@@ -334,7 +337,7 @@ var line2_viewport2 = function() {
 }
 
 var line3_viewport2 = function() {
-    $('.blue-viewport2').typed({
+    $('.green-viewport2').typed({
         strings: ["about_rahul():"],
         typeSpeed: 25,
         startDelay: 0,
