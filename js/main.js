@@ -192,7 +192,7 @@ var disappearTravel = function() {
 
 }
 
-// // Defining the Text to be written in the Sublime Box
+// Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
     $('.gray-viewport2').typed({
@@ -263,7 +263,7 @@ var line6_viewport2 = function() {
         showCursor: false,
         onStringTyped: function() {
             appearTravel();
-            line7_viewport2();
+            // line7_viewport2();
         }
     })
 }
