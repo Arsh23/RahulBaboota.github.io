@@ -119,7 +119,7 @@ var line10_viewport1 = function() {
         typeSpeed: 25,
         showCursor: false,
         onStringTyped: function() {
-             $('#next-page-button').addClass('animated bounce');
+            $('#next-page-button').addClass('animated bounce');
         }
     });
 }
@@ -158,115 +158,155 @@ nextPageButtonClick();
 
 // HTML code for travel objects
 
-var suitcase = 
-'<div class="suitcase">'+
-    '<img src="Images/suitcase.png">'+
-'</div>'
+var suitcase =
+    '<div class="suitcase">' +
+    '<img src="Images/suitcase.png">' +
+    '</div>'
 
-var ticket = 
-'<div class="box-ticket">'+
-    '<ul class="left-ticket">'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-    '</ul>'+
-    '<ul class="right-ticket">'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-        '<li></li>'+
-    '</ul>'+
-    '<div class="ticket">'+
-        '<span class="airline">Emirates</span>'+
-        '<span class="airline airlineslip">Emirates</span>'+
-        '<span class="boarding">Boarding pass</span>'+
-        '<div class="content">'+
-            '<span class="jfk">PRG</span>'+
-            '<span class="sfo">JFK</span>'+
-            '<span class="jfk jfkslip">PRG</span>'+
-            '<span class="sfo sfoslip">JFK</span>'+
-            '<div class="sub-content">'+
-                '<span class="watermark">Emirates</span>'+
-                '<span class="name">PASSENGER NAME<br><span>Rahul Baboota</span></span>'+
-                '<span class="flight">FLIGHT N&deg;<br><span>X3-65C3</span></span>'+
-                '<span class="gate">GATE<br><span>11B</span></span>'+
-                '<span class="seat">SEAT<br><span>45A</span></span>'+
-                '<span class="boardingtime">BOARDING TIME<br><span>6:00 AM ON OCTOBER 2015</span></span>'+
-                '<span class="flight flightslip">FLIGHT N&deg;<br><span>X3-65C3</span></span>'+
-                '<span class="seat seatslip">SEAT<br><span>45A</span></span>'+
-                '<span class="name nameslip">PASSENGER NAME<br><span>Rahul Baboota</span></span>'+
-            '</div>'+
-        '</div>'+
-    '</div>'+
-'</div>'
+var ticket =
+    '<div class="box-ticket">' +
+    '<ul class="left-ticket">' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '</ul>' +
+    '<ul class="right-ticket">' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '<li></li>' +
+    '</ul>' +
+    '<div class="ticket">' +
+    '<span class="airline">Emirates</span>' +
+    '<span class="airline airlineslip">Emirates</span>' +
+    '<span class="boarding">Boarding pass</span>' +
+    '<div class="content">' +
+    '<span class="jfk">PRG</span>' +
+    '<span class="sfo">JFK</span>' +
+    '<span class="jfk jfkslip">PRG</span>' +
+    '<span class="sfo sfoslip">JFK</span>' +
+    '<div class="sub-content">' +
+    '<span class="watermark">Emirates</span>' +
+    '<span class="name">PASSENGER NAME<br><span>Rahul Baboota</span></span>' +
+    '<span class="flight">FLIGHT N&deg;<br><span>X3-65C3</span></span>' +
+    '<span class="gate">GATE<br><span>11B</span></span>' +
+    '<span class="seat">SEAT<br><span>45A</span></span>' +
+    '<span class="boardingtime">BOARDING TIME<br><span>6:00 AM ON OCTOBER 2015</span></span>' +
+    '<span class="flight flightslip">FLIGHT N&deg;<br><span>X3-65C3</span></span>' +
+    '<span class="seat seatslip">SEAT<br><span>45A</span></span>' +
+    '<span class="name nameslip">PASSENGER NAME<br><span>Rahul Baboota</span></span>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>'
 
-var plane = 
-'<div class="plane">'+
-    '<div class="ver-stab"></div>'+
-    '<div class="ver-stab-tri"></div>'+
-    '<div class="nose">'+
-        '<div class="window1"></div>'+
-        '<div class="window2"></div>'+
-        '<div class="window3"></div>'+
-        '<div class="window4"></div>'+
-    '</div>'+
-    '<div class="back-body"></div>'+
-    '<div class="hor-stab"></div>'+
-    '<div class="hor-stab2"></div>'+
-    '<div class="wing"></div>'+
-    '<div class="wing-bottom"></div>'+
-    '<div class="wing right"></div>'+
-    '<div class="wing-bottom wing-right"></div>'+
-    '<div class="engine">'+
-        '<div class="fan">'+
-            '<div class="front">'+
-                '<div class="fan inner"></div>'+
-            '</div>'+
-        '</div>'+
-    '</div>'+
-    '<div class="engine eng-big2">'+
-        '<div class="fan">'+
-            '<div class="front">'+
-                '<div class="fan inner"> </div>'+
-            '</div>'+
-        '</div>'+
-    '</div>'+
-    '<div class="engine eng-small">'+
-        '<div class="fan">'+
-            '<div class="front">'+
-                '<div class="fan inner"></div>'+
-            '</div>'+
-        '</div>'+
-    '</div>'+
-    '<div class="engine eng-small small2">'+
-        '<div class="fan">'+
-            '<div class="front">'+
-                '<div class="fan inner"></div>'+
-            '</div>'+
-        '</div>'+
-    '</div>'+
-'</div>'
+var plane =
+    '<div class="plane">' +
+    '<div class="ver-stab"></div>' +
+    '<div class="ver-stab-tri"></div>' +
+    '<div class="nose">' +
+    '<div class="window1"></div>' +
+    '<div class="window2"></div>' +
+    '<div class="window3"></div>' +
+    '<div class="window4"></div>' +
+    '</div>' +
+    '<div class="back-body"></div>' +
+    '<div class="hor-stab"></div>' +
+    '<div class="hor-stab2"></div>' +
+    '<div class="wing"></div>' +
+    '<div class="wing-bottom"></div>' +
+    '<div class="wing right"></div>' +
+    '<div class="wing-bottom wing-right"></div>' +
+    '<div class="engine">' +
+    '<div class="fan">' +
+    '<div class="front">' +
+    '<div class="fan inner"></div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="engine eng-big2">' +
+    '<div class="fan">' +
+    '<div class="front">' +
+    '<div class="fan inner"> </div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="engine eng-small">' +
+    '<div class="fan">' +
+    '<div class="front">' +
+    '<div class="fan inner"></div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="engine eng-small small2">' +
+    '<div class="fan">' +
+    '<div class="front">' +
+    '<div class="fan inner"></div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>'
+
+// HTML Code for Writing Objects
+
+var typewriter =
+    '<div class="typewriter">' +
+    '<div id="platen">' +
+    '<div id="carriage-lever">' +
+    '</div>' +
+    '<div id="platen-knob-right"></div>' +
+    '<div id="platen-knob-left"></div>' +
+    '</div>' +
+    '<div id="paper">' +
+    '<div id="note">I' +
+    '<br>Love' +
+    '<br>Writing !!' +
+    '<br>' +
+    '<br> Do follow my Blog on Medium !! ' +
+    '</div>' +
+    '</div>' +
+    '<div id="body">' +
+    '<div id="top"></div>' +
+    '<div id="opening">' +
+    '<div id="internal-shadow"></div>' +
+    '<div id="internal-hollow"></div>' +
+    '<div id="internal-board-crop">' +
+    '<div id="internal-board"></div>' +
+    '</div>' +
+    '</div>' +
+    '<div id="internal-board2-crop">' +
+    '<div id="internal-board2"></div>' +
+    '</div>' +
+    '<div id="cutaway"></div>' +
+    '<div id="front">' +
+    '<div id="keyboard"></div>' +
+    '<div id="keys"></div>' +
+    '</div>' +
+    '</div>' +
+    '</div>'
+
+
 
 // Sublime Box FadeIn Entry
 
@@ -284,7 +324,7 @@ var changeBackground = function() {
     })
 };
 
-// // Appearance Function for Travel Section !!
+// Appearance Function for Travel Section !!
 
 var appearTravel = function() {
     $('#ticket').append(ticket);
@@ -295,21 +335,30 @@ var appearTravel = function() {
     $('.suitcase').addClass('animated slideInLeft');
 }
 
-// appearTravel();
 
 // Disappearance Function for Travel Section !! 
 
 var disappearTravel = function() {
-    $('.box-ticket').fadeOut(750, function(){
+    $('.box-ticket').fadeOut(750, function() {
         $('#ticket').empty();
     });
-    $('.plane').fadeOut(750, function(){
+    $('.plane').fadeOut(750, function() {
         $('#palne').empty()
     });
-    $('.suitcase').fadeOut(750, function(){
+    $('.suitcase').fadeOut(750, function() {
         $('#suitcase').empty()
     });
 }
+
+// Appearance Function for Writing Section !!
+
+var appearTypeWriter = function() {
+    $('#typewriter').append(typewriter);
+    $('.box-ticket').addClass('animated zoomIn');
+}
+
+// appearTypeWriter();
+// appearTravel();
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
@@ -394,6 +443,7 @@ var line7_viewport2 = function() {
         showCursor: false,
         onStringTyped: function() {
             disappearTravel();
+            appearTypeWriter();
         }
     })
 }

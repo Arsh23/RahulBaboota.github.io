@@ -2259,14 +2259,14 @@ body {
     opacity: 100;
 }
 
-#typewriter {
+.typewriter {
   position:relative;
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  top: 180px;
+  top: 480px;
   left: 400px;
-  opacity: 0;
+  opacity: 100;
 }
 
 #platen {
