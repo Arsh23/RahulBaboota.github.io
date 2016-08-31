@@ -354,11 +354,10 @@ var disappearTravel = function() {
 
 var appearTypeWriter = function() {
     $('#typewriter').append(typewriter);
-    $('.box-ticket').addClass('animated zoomIn');
+    $('.typewriter').addClass('animated zoomIn');
 }
 
-// appearTypeWriter();
-// appearTravel();
+
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
