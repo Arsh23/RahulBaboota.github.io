@@ -606,6 +606,10 @@ body {
     color: #FFFFFF;
 }
 
+.sublime-viewport2 .white-3-viewport2 {
+    color: #FFFFFF;
+}
+
 .sublime-viewport2 .cursor:before {
     opacity: 0;
     content: "|";
@@ -627,7 +631,7 @@ body {
     top: 70%;
     left: 30%;
     margin: -100px 0 0 -100px;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .external-tank {
@@ -1166,7 +1170,7 @@ body {
     right: 70%;
     border-radius: 50%;
     box-shadow: inset 12px -9px 3px #857c7c;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 

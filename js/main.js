@@ -306,6 +306,64 @@ var typewriter =
     '</div>' +
     '</div>'
 
+// HTML Code for Astronomy Objects
+
+var rocket = 
+    '<div class="rocket">'+
+        '<i class="external-tank">'+
+        '<i class="rocket-booster"></i>'+
+        '</i>'+
+        '<i class="shuttle">'+
+        '<i class="window"></i>'+
+        '</i>'+
+        '<i class="thrusters"></i>'+
+        '<i class="flames"></i>'+
+        '<i class="flames right"></i>'+
+        '<i class="smoke">'+
+                '<i class="s-1"></i>'+
+                '<i class="s-2"></i>'+
+                '<i class="s-3"></i>'+
+                '<i class="s-4"></i>'+
+                '<i class="s-5"></i>'+
+                '<i class="s-6"></i>'+
+                '<i class="s-7"></i>'+
+                '<i class="s-8"></i>'+
+                '<i class="s-9"></i>'+
+                '<i class="s-10"></i>'+
+                '<i class="s-11"></i>'+
+                '<i class="s-12"></i>'+
+                '<i class="s-13"></i>'+
+                '<i class="s-14"></i>'+
+                '<i class="s-15"></i>'+
+                '<i class="s-16"></i>'+
+                '<i class="s-17"></i>'+
+                '<i class="s-18"></i>'+
+                '<i class="s-19"></i>'+
+                '<i class="s-20"></i>'+
+                '<i class="s-21"></i>'+
+                '<i class="s-22"></i>'+
+                '<i class="s-23"></i>'+
+                '<i class="s-24"></i>'+
+                '<i class="s-25"></i>'+
+                '<i class="s-26"></i>'+
+                '<i class="s-27"></i>'+
+                '<i class="s-28"></i>'+
+                '<i class="s-29"></i>'+
+                '<i class="s-30"></i>'+
+        '</i>'+
+    '</div>'
+
+
+var moon = 
+    '<div id="moon" class="position spot">'+
+        '<div class="position spot" id="s1"></div>'+
+        '<div class="position spot" id="s2"></div>'+
+        '<div class="position spot" id="s3"></div>'+
+        '<div class="position spot" id="s4"></div>'+
+        '<div class="position spot" id="s5"></div>'+
+        '<div class="position spot" id="s6"></div>'+
+    '</div>'
+
 
 
 // Sublime Box FadeIn Entry
@@ -343,7 +401,7 @@ var disappearTravel = function() {
         $('#ticket').empty();
     });
     $('.plane').fadeOut(750, function() {
-        $('#palne').empty()
+        $('#plane').empty()
     });
     $('.suitcase').fadeOut(750, function() {
         $('#suitcase').empty()
@@ -357,6 +415,23 @@ var appearTypeWriter = function() {
     $('.typewriter').addClass('animated zoomIn');
 }
 
+// Disappearance Function for Writing Section !!
+
+var disappearTypeWriter = function() {
+    $('#typewriter').fadeOut(750 , function() {
+        $('.typewriter').empty();
+    });
+}
+
+// Appearance Function for Astronomy Section !! 
+
+var appearAstronomy = function() {
+    $('#rocket').append(rocket);
+    $('.rocket').addClass('animated zoomIn');
+    $('#hidden-orbit').append(moon);
+    // $('.moon').addClass('animated zoomIn');
+
+}
 
 // Defining the Text to be written in the Sublime Box
 
@@ -436,15 +511,33 @@ var line6_viewport2 = function() {
 
 var line7_viewport2 = function() {
     $('.white-2-viewport2').typed({
-        strings: [' ^1000 " I love to hone my Penmenship Craft " '],
+        strings: [' ^1000 " I love to hone my Penmenship Craft . " '],
         typeSpeed: 25,
         startDelay: 0,
         showCursor: false,
         onStringTyped: function() {
             disappearTravel();
             appearTypeWriter();
+            line8_viewport2();
         }
     })
 }
+
+var line8_viewport2 = function() {
+    $('.white-3-viewport2').typed({
+        strings: [' ^13000 " I love to dwell about on realms beyond our world . " '],
+        typeSpeed: 25,
+        startDelay: 0,
+        showCursor: false,
+        onStringTyped: function() {
+            disappearTypeWriter();
+            appearAstronomy();
+        }
+    })
+}
+
+
+
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------*/
