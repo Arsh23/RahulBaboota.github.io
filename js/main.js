@@ -430,10 +430,14 @@ var appearAstronomy = function() {
     $('.rocket').addClass('animated zoomIn');
     $('#hidden-orbit').append(moon);
     // $('.moon').addClass('animated zoomIn');
+    $('.astronaut').css('opacity','100');
+    $('.astronaut').addClass('animated zoomIn');
+    $('.stars').css('opacity','100');
 
 }
 
-appearAstronomy();
+// appearAstronomy();
+appearTypeWriter();
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {

@@ -1335,10 +1335,14 @@ body {
 }
 
 .astronaut {
-    width: 25%;
+    position: relative;
+    width: 20%;
     height: auto;
+    left: 40vh;
+    top: 20vh;
     overflow: visible;
     animation: Levitation 5s 1s infinite ease-in-out;
+    opacity: 0;
 }
 
 @keyframes Levitation {
@@ -1440,6 +1444,7 @@ body {
     overflow: visible;
     animation: starsRotate 155s 1s linear;
     transform-origin: center;
+    opacity: 0;
 }
 
 @keyframes starsRotate {
@@ -2414,7 +2419,7 @@ body {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    top: 480px;
+    top: 20vh;
     left: 400px;
     opacity: 100;
 }
