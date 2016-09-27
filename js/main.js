@@ -433,6 +433,7 @@ var appearAstronomy = function() {
 
 }
 
+appearAstronomy();
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
