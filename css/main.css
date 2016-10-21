@@ -1251,6 +1251,7 @@ body {
     animation-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.5);
 }
 
+/*
 @-webkit-keyframes rise {
     0% {
         -webkit-transform: rotate(0deg);
@@ -1294,7 +1295,7 @@ body {
         transform: rotate(90deg);
     }
 }
-
+*/
 
 /* (Astronaut) */
 
