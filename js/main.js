@@ -429,15 +429,13 @@ var appearAstronomy = function() {
     $('#rocket').append(rocket);
     $('.rocket').addClass('animated zoomIn');
     $('#hidden-orbit').append(moon);
-    // $('.moon').addClass('animated zoomIn');
+    $('.moon').addClass('animated zoomIn');
     $('.astronaut').css('opacity','100');
     $('.astronaut').addClass('animated zoomIn');
     $('.stars').css('opacity','100');
-
 }
 
-// appearAstronomy();
-appearTypeWriter();
+
 // Defining the Text to be written in the Sublime Box
 
 var line1_viewport2 = function() {
@@ -530,7 +528,7 @@ var line7_viewport2 = function() {
 
 var line8_viewport2 = function() {
     $('.white-3-viewport2').typed({
-        strings: [' ^13000 " I love to dwell about on realms beyond our world . " '],
+        strings: [' ^15000 " I love to dwell about on Realms beyond our world . " '],
         typeSpeed: 25,
         startDelay: 0,
         showCursor: false,
